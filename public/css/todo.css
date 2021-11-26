@@ -1,0 +1,16 @@
+
+body{
+  background-color: rgba(72, 20, 194, 0.067);
+}
+
+.to-do-list{
+  background-color: thistle;
+  line-height: 1;
+  padding: 30px;
+  border: 1px white ;
+  
+}
+
+.to-do-list-ttl h1{
+  font-size: 10px;
+}
