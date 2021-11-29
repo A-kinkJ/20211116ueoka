@@ -23,11 +23,6 @@
       margin-top: 50px;
       margin-bottom: 30px;
       padding: 30px;
-
-      /*position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);*/
       border-radius: 10px;
     }
 
@@ -38,6 +33,10 @@
 
     .to-do-list-content {
       width: 100%;
+    }
+
+    .to-do-list-txt p{
+      color: red;
     }
 
     .to-do-txt-content {
@@ -151,6 +150,9 @@
               <td>
                 <input class="create-button" type="submit" value="追加">
               </td>
+              @if (count($errors) > 0)
+              <p>0文字から20文字で入力してください</p>
+              @endif
             </form>
           </div>
         </tr>
