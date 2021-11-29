@@ -151,7 +151,7 @@
                 <input class="create-button" type="submit" value="追加">
               </td>
               @if (count($errors) > 0)
-              <p>0文字から20文字で入力してください</p>
+              <p>1文字以上20文字以下で入力してください</p>
               @endif
             </form>
           </div>
