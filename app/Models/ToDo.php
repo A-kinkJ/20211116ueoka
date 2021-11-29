@@ -16,5 +16,8 @@ class ToDo extends Model
 
     protected $guarded = array('id');
 
+    public static $rules = array(
+        'content' => 'required|min:0|max:20'
+    );
 
 }

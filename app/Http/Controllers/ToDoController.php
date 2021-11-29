@@ -24,8 +24,9 @@ class ToDoController extends Controller
         return view('index', ['todos' => $todos]);
     }
 
-    public function create(CreateRequest $request)
+    public function create(Request $request)
     {
+        $this->validate($request, ToDo::$rules);
         $todo = new ToDo;
         $form = $request->all();
         unset($form['_token_']);
@@ -34,8 +35,9 @@ class ToDoController extends Controller
     }
 
 
-    public function update(UpdateRequest $request)
+    public function update(Request $request)
     {
+        $this->validate($request, ToDo::$rules);
         $form = $request->all();
         //$form = $request->all();
         unset($form['_token']);
