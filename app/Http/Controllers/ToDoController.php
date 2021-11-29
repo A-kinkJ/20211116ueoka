@@ -2,9 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\ToDo\CreateRequest;
-use App\Http\Requests\ToDo\StoreRequest;
-use App\Http\Requests\ToDo\UpdateRequest;
+
 use App\Models\ToDo;
 use Illuminate\Http\Request;
 
@@ -39,7 +37,6 @@ class ToDoController extends Controller
     {
         $this->validate($request, ToDo::$rules);
         $form = $request->all();
-        //$form = $request->all();
         unset($form['_token']);
         ToDo::where('id', $request->id)->update($form);;
         return redirect('/');
