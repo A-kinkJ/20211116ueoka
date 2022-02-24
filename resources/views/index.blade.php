@@ -8,6 +8,7 @@
   <title>TODOリスト</title>
   <style>
     body {
+      margin: 0;
       background-color: #2d197c;
       height: 100vh;
       width: 100vw;
@@ -18,11 +19,10 @@
     .to-do-list {
 
       background-color: #fff;
-      width: 50vw;
+      width: 85vw;
       margin: auto;
       margin-top: 50px;
-      margin-bottom: 30px;
-      padding: 30px;
+      padding: 30px 0;
       border-radius: 10px;
     }
 
@@ -31,20 +31,21 @@
       margin-bottom: 10px;
     }
 
-    .to-do-list-content {
-      width: 100%;
+
+    .to-do-list-main {
+      width: 95%;
     }
 
-    .to-do-list-txt p{
+    .to-do-list-txt p {
       color: red;
     }
 
     .to-do-txt-content {
-      width: 75%;
+      width: 95%;
       border-radius: 3px;
       border: 1px solid #ccc;
       font-size: 18px;
-      margin-right: 10%;
+      margin-left: 10%;
     }
 
     .create-button {
@@ -128,6 +129,109 @@
       background-color: #71fadc;
       border-color: #71fadc;
       color: #fff;
+    }
+
+    @media screen and (max-width: 480px) {
+      .to-do-list h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .to-do-txt-content {
+        width: 85%;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        font-size: 18px;
+        margin-left: 10%;
+      }
+
+      .create-button {
+        text-align: left;
+        border: 2px solid #dc70fa;
+        font-size: 10px;
+        color: #dc70fa;
+        background-color: #fff;
+        font-weight: bold;
+        padding: 5px 12px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.4s;
+        outline: none;
+      }
+
+      .add-button:hover {
+        background-color: #dc70fa;
+        border-color: #dc70fa;
+        color: #fff;
+      }
+
+      th {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 14px;
+      }
+
+      table {
+        text-align: center;
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      tr {
+        height: 10px;
+      }
+
+      td{
+        font-size: 10px;
+      }
+
+      .add-txt {
+        width: 90%;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        padding: 3px;
+        font-size: 14px;
+      }
+
+      .update-button {
+        text-align: left;
+        border: 2px solid #fa9770;
+        font-size: 9px;
+        color: #fa9770;
+        background-color: #fff;
+        font-weight: bold;
+        padding: 3px 11px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.4s;
+        outline: none;
+      }
+
+      .update-button:hover {
+        background-color: #fa9770;
+        border-color: #fa9770;
+        color: #fff;
+      }
+
+      .delete-button {
+        text-align: left;
+        border: 2px solid #71fadc;
+        font-size: 9px;
+        color: #71fadc;
+        background-color: #fff;
+        font-weight: bold;
+        padding: 3px 11px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.4s;
+        outline: none;
+      }
+
+      .delete-button:hover {
+        background-color: #71fadc;
+        border-color: #71fadc;
+        color: #fff;
+      }
     }
   </style>
 </head>
